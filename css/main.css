@@ -1,0 +1,319 @@
+*{
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+}
+h1{
+    font-size: 72px;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 32px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wraper{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    padding: 20px 60px 250px;
+    position: relative;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 60%,#57B8FF 40% );
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 715px;
+}
+.nav_menu-link{
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.nav_link-active{
+    color: #FAC422;
+}
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+.contacts_basket{
+    position:relative;
+}
+.basket_num{
+    position: absolute;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: #141820;
+    padding: 0 6px;
+    background: #fff;
+    border-radius: 9px;
+    top: -10px;
+    right: -16px;
+}
+.contacts_btn{
+    padding: 16px 31px;
+    background: none;
+    border: 1px solid #FFFFFF;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.main_wraper{
+    margin-top: 209px;
+}
+.future-fire{
+    position: relative;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #57B8FF;
+    margin-left: 40px;
+    font-size: 16px;
+}
+.future-fire::before{
+    content:'';
+    background: url('../img/icon/icon_fire.svg') center/cover no-repeat;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -13px;
+    left: -40px;
+}
+.main_title{
+    line-height: 86px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 656px;
+    margin-top: 16px;
+    position: relative;
+}
+.main_title::after{
+    content:'';
+    background:url('../img/line-gold.svg')center/cover no-repeat;
+    width: 434px;
+    height: 16px;
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+}
+.main_subtitle{
+    font-size: 18px;
+    line-height: 28px;
+    color: #999999;
+    width: 615px;
+    margin-top: 43px;
+}
+.main_more{
+    margin-top: 53px;
+}
+.main_more-link{
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.btn-active{
+    padding: 21px 34px;
+    background: #57B8FF;
+    margin-right: 40px;
+}
+
+.asaidepanel{
+    position: absolute;
+    width: 307px;
+    transform: rotate(-90deg);
+    top: 18%;
+    left: -5%;
+    z-index: 3;
+}
+.social_item{
+    font-size: 10px;
+    line-height: 25px;
+    color: #80858F;
+ 
+}
+.social_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sponsor{
+    padding: 130px 60px;
+    background: #FDD04A;
+}
+.sponsor_title{
+    line-height: 58px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #222730;
+    position: relative;
+    margin-bottom: 45px;
+}
+.sponsor_title::after{
+    content:'';
+    background: url('../img/line.svg')center/cover no-repeat;
+    width: 292px;
+    height: 12px;
+    position: absolute;
+    bottom: -13px;
+    right: 36%;
+}
+.sponsor_descript{
+    width: 576px;
+    line-height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555;
+    margin-bottom: 41px;
+}
+.sponsor_wraper{
+    width: 1320px;
+    justify-content: space-between;
+    margin: 0 auto;
+    transition: all ease 0.3s;
+}
+.sponsor_link{
+    transition: all ease 0.5s;
+}
+.sponsor_link:hover{
+    transform: scale(1.1);
+}
+.stopShop{
+    padding: 130px 60px;
+    background: url('../img/stop_shop-bg.png')center/cover no-repeat;
+}
+.stopShop_fire{
+    margin: 0 auto;
+    width: 203px;
+}
+.stopShop_title{
+    width: 716px;
+    line-height: 74px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 11px auto 39px;
+}
+.stopShop_subtitle{
+    width: 698px;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(223, 223, 223, 0.8);
+    margin: 0 auto 61px;
+}
+.wraper_grid{
+    display: grid;
+    width: 1204px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,586px);
+    grid-template-rows: repeat(2, 212px);
+    gap: 32px;
+}
+.stopShop_capabil{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 35px 35px 35px 80px;
+}
+.capabil_title{
+    line-height: 42px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+    position: relative;
+}
+.capabil_title::before{
+    content: '';
+    background: url('../img/icon/cube.svg')center/cover no-repeat;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 4px;
+    left: -40px;
+}
+.capabil_descript{
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(223, 223, 223, 0.8);
+}
+.era{
+    padding: 130px 60px;
+    background-color: #141820;
+}
+.era_wraper{
+    justify-content: space-between;
+}
+.era_titile{
+    line-height: 74px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 676px;
+    margin: 10px 0 38px;
+}
+.era_subtitle{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(223, 223, 223, 0.8);
+    width: 721px;
+    margin-bottom: 75px;
+}
+.video_playr{
+    position: relative;
+}
+.video_icon-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.custom{
+    padding: 0 60px;
+    background: #2A313C;
+}
+.custom_content{
+    margin: 82px 0;
+}
+.custom_title{
+    line-height: 74px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 554px;
+    margin: 11px 0 38px;
+}
+.custom_subtitle{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(223, 223, 223, 0.8);
+    width: 561px;
+}
+.custom_foto{
+    margin-top: 55px;
+    width: 596px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active-foto{
+    border: 10px solid #3B3D46;
+    border-radius: 20px;
+}
