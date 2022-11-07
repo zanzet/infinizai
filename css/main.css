@@ -48,11 +48,7 @@ button, p, div{
     position: relative;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 60%,#57B8FF 40% );
 }
-/* header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+
 .logo{
     transition: all 0.3s ease-in;
 }
@@ -224,7 +220,7 @@ header ul{
     height: 12px;
     position: absolute;
     bottom: -13px;
-    right: 30%;
+    right: 34%;
 }
 .sponsor_descript{
     width: 576px;
@@ -565,7 +561,7 @@ footer{
     text-align: center;
     color: #898989;
 }
-@media screen and (max-width: 1440px){
+@media (max-width: 1440px){
     
     html, body {
         overflow-x: hidden;
@@ -685,7 +681,7 @@ footer{
    
 }
 
-@media screen and (max-width: 1200px){
+@media (max-width: 1200px){
  
     .container{
         width: 960px;
@@ -791,7 +787,7 @@ footer{
    
   
 } 
-@media screen and (max-width: 992px){
+@media (max-width: 992px){
     .container{
         width: 720px;
     }
@@ -912,9 +908,12 @@ footer{
         margin-top: 20px;
     }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .main {
         padding: 20px 0px 150px;
+    }
+    .main_more{
+        width: 101%;
     }
     .stopShop {
         padding: 100px 0px;
@@ -933,13 +932,16 @@ footer{
         padding: 0;
     }
     .navbar-mob{
-        width: 540px;
+        width: 95%;
     }
     .contacts_basket {
-        right: -100px;
+         right: -12%;
     }
     .main_wraper {
         margin-top: 115px;
+    }
+    .main_subtitle{
+        width: 95%;
     }
     .container-fluid{
         padding: 0;
@@ -950,13 +952,16 @@ footer{
     h1{
         font-size: 42px;
     }
+    .main_title{
+        width: 82%;
+    }
     .main_title::after {
         width: 277px;
-        bottom: -4px;
-        right: 288px;
+        bottom: 82px;
+        right: -6px;
     }
     .social_link {
-        left: -33%;
+        left: -40%;
         top: 34.9%;
     }
     .sponsor_title::after {
@@ -1062,19 +1067,10 @@ footer{
   
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
 	.container {
 		width: 90%;
 	}
-    .navbar-mob {
-        width: 102%;
-    }
-    .contacts_basket {
-        right: -75px;
-    }
-    .main_subtitle {
-        width: 100%;
-    }
     .sponsor_descript {
         width: 100%;
     }
