@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     position: relative;
 }
@@ -23,6 +26,31 @@ a{
 }
 button, p, div{
     box-sizing:border-box;
+}
+.scroll{
+    width: 32px;
+    height: 32px;
+    z-index: 5;
+}
+.scroll-btn{
+    display:none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 48px;
+    height: 48px;
+    z-index: 4;
+    border-radius: 100%;
+    background-color:rgb(255 255 249 / 42%);
+    transition: all ease .6s;
+}
+.scroll-active{
+    display: flex;
+}
+.scroll-btn:hover{
+    background-color: rgb(255 255 249 / 100%);
 }
 .container{
     width: 1340px;
@@ -357,18 +385,34 @@ header ul{
     color: rgba(223, 223, 223, 0.8);
     width: 561px;
 }
+.arrow-back{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -2%;
+
+}
+.custom_foto-item {
+    margin:0 20px;
+    width: 174px;
+    height: 102px;
+}
+.arrow-next{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -2%;
+}
+
 .custom_foto{
     margin-top: 55px;
-    width: 596px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 0;
+    position: relative;
 }
 
-.active-foto{
-    border: 10px solid #3B3D46;
-    border-radius: 20px;
-}
 .multiplay_section{
     background: #141820;
 }
@@ -560,546 +604,4 @@ footer{
     line-height: 18px;
     text-align: center;
     color: #898989;
-}
-@media (max-width: 1440px){
-    
-    html, body {
-        overflow-x: hidden;
-    }
-    .container{
-        width: 1140px;
-    }
-    .main{
-        padding: 20px 10px 150px;
-    }
-    h1{
-        font-size: 60px;
-    }
-    p{
-        font-size: 18px;
-    }
-    .main_title{
-        width: 553px;
-    }
-    .main_title::after{
-        width: 382px;
-    }
-    .main_subtitle{
-        width: 540px;
-    }
-    .main-bg{
-        width: 570px;
-        height: 490px;
-    }
-    .social_link{
-        top: 44.9%;
-        left: -31%;
-    }
-    .sponsor_title::after {
-        width: 285px;
-        right: 33%;
-    }
-    .sponsor{
-        padding: 100px 20px;
-    }
-    .sponsor_wraper{
-        width: 1140px;
-    }
-    .sponsor_img{
-        width: 170px;        
-    }
-    .wraper_grid{
-        grid-template-columns: repeat(2,530px);
-        grid-template-rows: repeat(2, 215px);
-    }
-    .capabil_descript{
-        font-size: 16px;
-    }
-    .era{
-        padding: 100px 20px;
-    }
-    .era_titile{
-        width: 550px;
-    }
-    .era_subtitle{
-        width: 550px;
-        font-size: 18px;
-    }
-    .custom{
-        padding: 0 20px;
-    }
-    .custom_bg{
-        width: 500px;
-    }
-    .multiplay_container{
-        width: 1200px;
-    }
-    .multiplay_item-title{
-        font-size: 34px;
-    }
-    .news{
-        padding: 100px 20px;
-    }
-    .news_grid{
-        grid-template-columns: repeat(2, 560px);
-    }
-   .news_main-img{
-        width: 560px;
-    }
-    .news_main-title{
-        font-size: 28px;
-    }
-    .news_additional{
-        grid-template-columns: repeat(2, 272px);
-        grid-template-rows: repeat(2, 300px);
-        column-gap: 15px;
-        row-gap: 25px;
-    }
-    .news_additional-img{
-        width: 272px;
-    }
-    .news_additional-data{
-        font-size: 14px;
-    }
-    .news_additional-title{
-        font-size: 18px;
-    }
-    .btn-news{
-        margin-right: 0;
-    }
-    .form_title{
-        font-size: 55px;
-        width: 670px;
-    }
-    .form_subtitle{
-        font-size: 16px;
-        width: 740px;
-    }
-    footer{
-        padding: 100px 20px;
-    }
-   
-}
-
-@media (max-width: 1200px){
- 
-    .container{
-        width: 960px;
-    }
-  
-    .main_wraper{
-        display: block;
-    }
-    .nav_menu ul{
-        width: 555px;
-    }
-    .contacts_btn{
-        padding: 16px 25px;
-    }
-    .main_content{
-        margin-left: 80px;
-    }
-    .social_link{
-        left: -20%;
-    }
-    .main-bg{
-        display: block;
-        margin: 30px auto 0;
-    }
-    .sponsor_title::after {
-        width: 285px;
-        right: 30%;
-    }
-    .sponsor_wraper{
-        width: 785px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-    }
-    .sponsor_link{
-        margin-right: 30px;
-        margin-bottom: 30px;
-    }
-    .stopShop{
-        padding: 100px 20px;
-    }
-    .wraper_grid{
-        grid-template-columns: repeat(2,460px);
-        grid-template-rows: repeat(2, 268px);
-    }
-    .stopShop_capabil{
-        padding-left: 60px;
-    }
-    .capabil_title{
-        font-size: 25px;
-    }
-    .capabil_descript{
-        font-size: 16px;
-    }
-    .video{
-        width: 400px;
-        height: 460px;
-    }
-    .video_icon-img{
-        width: 100px;
-        height: 100px;
-    }
-    .custom_bg{
-        width: 500px;
-    }
-    .custom_subtitle{
-        width: 435px;
-        font-size: 17px;
-    }
-    .custom_foto{
-        width: 386px;
-        overflow: hidden;
-    }
-    .custom_foto-item{
-        margin-right: 10px;
-    }
-    .multiplay_container{
-        margin: 0 auto;
-    }
-    .multiplay_container{
-        max-width: 1200px;
-    }
-    .multiplay_item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 330.6px;
-        height: 601px;
-        padding: 0;
-    }
-    .multiplay_item-title{
-        font-size: 30px;
-    }
-    .multiplay_item-img{
-        width: 100px;
-        height: 100px;
-    }
-    
-    .news_grid{
-        margin-left: 65px;
-        grid-template-columns: 648px;
-    }
-   
-  
-} 
-@media (max-width: 992px){
-    .container{
-        width: 720px;
-    }
-    .desctop{
-        display: none;
-    }
-    .mobile{
-        display: block;
-    }
-    .navbar-mob{
-        width: 720px;
-    }
-    .navbar-style{
-        border: none;
-    }
-    .contacts_basket {
-        right: -160px;
-    }
-    .mob-menu{
-        display: block;
-        height: 4px;
-        width: 32px;
-        background-color: #fff;
-        border-radius: 20px;
-    }
-    .mob-menu:nth-child(2){
-        margin: 7px 0 7px;
-    }
-    .offcanvas-style{
-        width: 250px;
-    }
-    .offcanvas-body ul{
-        flex-direction: column;
-        width: 100px;
-    }
-    .nav_menu-link{
-        color: #FAC422;
-    }
-    .nav_menu-item{
-        margin-bottom: 20px;
-    }
-    .social_link {
-        left: -28%;
-    }
-    .sponsor_title::after {
-        width: 270px;
-        right: 23%;
-    }
-    .sponsor_wraper {
-        width: 720px;
-    }
-    .wraper_grid {
-        grid-template-columns: repeat(2,337px);
-        grid-template-rows: repeat(2, 341px);
-    }
-    h2{
-        font-size: 37px;
-    }
-    .stopShop_title{
-        width: 500px;
-    }
-    .stopShop_subtitle{
-        width: 600px;
-        font-size: 16px;
-    }
-    .era_wraper{
-        flex-direction: column;
-    }
-    .era_subtitle{
-        width: 600px;
-    }
-    .video_playr{
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .custom_foto{
-        width: 600px;
-    }
-    .custom_subtitle{
-        width: 600px;
-    }
-    .multiplay_container{
-        width: 760px;
-    }
-    .multiplay_content{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .multiplay_item{
-        height: 500px;
-    }
-    .news_title{
-        width: 470px;
-    }
-    form{
-        width: 600px;
-    }
-    .form_subtitle {
-        font-size: 14px;
-        width: 644px;
-    }
-    .input_email{
-        font-size: 16px;
-        padding: 23px 0 23px 13px;
-    }
-    .form-btn{
-        margin: 0;
-        font-size: 16px;
-        padding: 19px 31px;
-    }
-    .footer_wrap{
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .footer_social{
-        margin-top: 20px;
-    }
-}
-@media (max-width: 768px) {
-    .main {
-        padding: 20px 0px 150px;
-    }
-    .main_more{
-        width: 101%;
-    }
-    .stopShop {
-        padding: 100px 0px;
-    }
-    .era {
-        padding: 100px 0px;
-    }
-    .custom {
-        padding: 0;
-    }
-    .news {
-        padding: 100px 0px;
-    }
-    .container{
-        width: 467px;
-        padding: 0;
-    }
-    .navbar-mob{
-        width: 95%;
-    }
-    .contacts_basket {
-         right: -12%;
-    }
-    .main_wraper {
-        margin-top: 115px;
-    }
-    .main_subtitle{
-        width: 95%;
-    }
-    .container-fluid{
-        padding: 0;
-    }
-    .main_content{
-        margin: 0;
-    }
-    h1{
-        font-size: 42px;
-    }
-    .main_title{
-        width: 82%;
-    }
-    .main_title::after {
-        width: 277px;
-        bottom: 82px;
-        right: -6px;
-    }
-    .social_link {
-        left: -40%;
-        top: 34.9%;
-    }
-    .sponsor_title::after {
-        width: 217px;
-        right: 21%;
-    }
-    .sponsor_descript {
-        width: 500px;
-    }
-    .sponsor_wraper {
-        width: 413px;
-    }
-    .stopShop_subtitle{
-        width: 510px;
-    }
-    h2{
-        font-size: 30px;
-    }
-    .stopShop_title {
-        width: 440px;
-    }
-    .multiplay{
-        margin: 10px 0;
-    }
-    .capabil_title {
-        font-size: 19px;
-    }
-    .capabil_descript {
-        font-size: 14px;
-    }
-    .wraper_grid {
-        grid-template-columns: repeat(2,240px);
-        grid-template-rows: repeat(2, 399px);
-    }
-    .era_titile {
-        width: 485px;
-    }
-    .era_subtitle {
-        width: 515px;
-    }
-    .custom_title{
-        width: 500px;
-    }
-    .custom_subtitle {
-        width: 500px;
-    }
-    p{
-        font-size: 15px;
-    }
-    .custom_foto-item{
-        width: 150px;
-    }
-    .custom_foto {
-        width: 535px;
-    }
-    .news_title {
-        width: 270px;
-    }
-    .btn-news{
-        width: 185px;
-        height: 75px;
-        margin-top: 75px;
-    }
-    .news_grid {
-        margin-left: 0;
-        grid-template-columns: 520px;
-    }
-    .news_main-img {
-        width: 520px;
-    }
-    .news_additional-img {
-        width: 250px;
-    }
-    .news_additional-title {
-        font-size: 17px;
-    }
-    .form_title {
-        font-size: 27px;
-        width: 516px;
-    }
-    .form_subtitle {
-        font-size: 12px;
-        width: 492px;
-    }
-    .input_email {
-        font-size: 15px;
-        padding: 18px 0 18px 13px;
-        width: 335px;
-    }
-    .form-btn {
-        font-size: 14px;
-        padding: 14px 23px;
-    }
-    .footer_wrap{
-        flex-direction: column;
-    }
-    .footer_logo-descript {
-        width: 440px;
-    }
-    .footer_menu,.footer_page,.footer_social{
-        margin-left: 50px;
-    }
-  
-}
-
-@media (max-width: 576px) {
-	.container {
-		width: 90%;
-	}
-    .sponsor_descript {
-        width: 100%;
-    }
-    .stopShop_subtitle {
-        width: 100%;
-    }
-    .wraper_grid {
-        grid-template-columns: repeat(1,450px);
-        grid-template-rows: repeat(4, 230px);
-    }
-    .era_subtitle{
-        width: 100%;
-    }
-    .custom_foto {
-        width: 100%;
-    }
-    .news_grid{
-        grid-template-rows: 620px;
-    }
-    .news_main-img {
-        width: 92%;
-    }
-    .news_additional{
-        grid-template-columns: 350px;
-    }
-    .input_email {
-        width: 278px;
-    }
-    .form_title {
-        font-size: 22px;
-    }
 }
