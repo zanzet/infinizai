@@ -8,8 +8,8 @@ $(document).ready(function(){
         adaptiveHaight: true,
         arrows: true,
         
-        prevArrow: '<button type="button" class="slick-prev arrow-back bg-arrow"><img src="../img/icon/up-arrow.svg"></button>',
-        nextArrow:'<button type="button" class="slick-next arrow-next bg-arrow"><img src="../img/icon/up-arrow.svg"></button>',
+        prevArrow: '<button type="button" class="slick-prev arrow-back bg-arrow"><img src="img/icon/up-arrow.svg"></button>',
+        nextArrow:'<button type="button" class="slick-next arrow-next bg-arrow"><img src="img/icon/up-arrow.svg"></button>',
         responsive: [
           {
             breakpoint: 768,
